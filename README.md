@@ -1,0 +1,2 @@
+# ginx
+Gin scaffolding
