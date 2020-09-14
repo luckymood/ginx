@@ -2,6 +2,7 @@ package setup
 
 import (
 	"ginx/config"
+	"ginx/utility"
 
 	"github.com/gin-gonic/gin"
 )
@@ -17,6 +18,7 @@ func init() {
 func setEngine() {
 	engine = gin.New()
 	initRouters()
+	utility.Logger().Info("successfully set engine...")
 }
 
 // Engine get engine

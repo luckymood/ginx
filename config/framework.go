@@ -5,6 +5,7 @@ import (
 	"os"
 	"path"
 
+	"go.uber.org/zap"
 	"gopkg.in/yaml.v2"
 )
 
@@ -12,6 +13,11 @@ import (
 var Framework struct {
 	Mode string `yaml:"mode"`
 	Port string `yaml:"port"`
+	Zap  struct {
+		Env    string     `yaml:"env"`
+		Custom bool       `yaml:"custom"`
+		Config zap.Config `yaml:"config"`
+	} `yaml:"zap"`
 }
 
 // ParseFrameworkConfig parse default framework-config in conf/framework.yaml

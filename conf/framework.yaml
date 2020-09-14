@@ -1,2 +1,48 @@
 mode: "debug"
 port: ":8080"
+zap:
+  # prod or dev
+  env: "dev"
+  custom: true
+  config:
+    # debug, info, warn, error, dpanic, panic, fatal
+    level: "debug"
+    development: true
+    disableCaller: false
+    disableStacktrace: false
+
+    # Sampling caps the global CPU and I/O load that logging puts on your process while attempting to preserve a representative subset of your logs.
+    # Values configured here are per-second. See zapcore.NewSamplerWithOptions for details.
+    # sampling:
+    #   initial:
+    #   thereafter:
+
+    # json, console
+    encoding: json
+    encoderConfig:
+      messageKey: "msg"
+      levelKey: "level"
+      timeKey: "time"
+      nameKey: "logger"
+      callerKey: "caller"
+      functionKey: "func"
+      stacktraceKey: "trace"
+      lineEnding: "\n"
+      # capital, capitalColor, color,
+      levelEncoder: "capital"
+      # RFC3339Nano, RFC3339, ISO8601, millis, nanos,
+      timeEncoder: "RFC3339Nano"
+      # string, nanos, ms,
+      durationEncoder: "nanos"
+      # full,
+      callerEncoder: "full"
+      # full,
+      nameEncoder: "full"
+      # defaults to tab
+      # consoleSeparator:
+    outputPaths:
+      - "stdout"
+      - "ginx.log"
+    errorOutputPaths:
+      - "stderr"
+    initialFields:
