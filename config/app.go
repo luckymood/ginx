@@ -10,6 +10,7 @@ import (
 
 // App global config
 var App struct {
+	Secret string `yaml:"secret"`
 }
 
 // ParseAppConfig parse default app-config in conf/app.yaml
