@@ -22,6 +22,7 @@ var Framework struct {
 
 // ParseFrameworkConfig parse default framework-config in conf/framework.yaml
 func ParseFrameworkConfig() {
+	// todo: get root
 	fp, err := os.Open(path.Join(Root(), "conf/framework.yaml"))
 	if err != nil {
 		panic("open framework config error, " + err.Error())
