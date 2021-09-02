@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"ginx/metric"
-	"ginx/utility"
+	"ginx/utils"
 	"net/http"
 	"strconv"
 	"time"
@@ -14,14 +14,14 @@ import (
 )
 
 // Log access log
-func Log() gin.HandlerFunc {
+func MakeLogMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		start := time.Now()
 		// 后面的中间件可能抛出错误
 		defer func() {
 			cost := time.Since(start)
 
-			utility.Logger().Info("accesslog", // ElasticSearch-friendly
+			utils.Logger().Info("accesslog", // ElasticSearch-friendly
 				zap.String("method", c.Request.Method),
 				zap.String("path", c.Request.URL.Path),
 				zap.String("query", c.Request.URL.RawQuery),

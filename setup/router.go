@@ -23,7 +23,7 @@ func initRouters() {
 
 	// common API
 	r := Engine()
-	r.Use(middleware.Log())
+	r.Use(middleware.MakeOpenTracingMiddleware(), middleware.MakeLogMiddleware())
 	// healthy check
 	r.GET("/health", controller.Health)
 	// expose metrics

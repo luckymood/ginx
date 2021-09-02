@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da631035-b82b-477a-8643-1d47b656ea6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/conf/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/issue.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/issue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/access.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/access.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/setup/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/setup/setup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/logger.go" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1k8uQ3bhIvXu7Uoxp6ze2hfN8jD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="696" y="412" key="#Go_Modules" timestamp="1605094590541">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="696" y="412" key="#Go_Modules/0.23.1792.1097@0.23.1792.1097" timestamp="1605094590541" />
+    <state x="397" y="210" key="SettingsEditor" timestamp="1605095046972">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1605095046972" />
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1605097948521">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1605097948521" />
+  </component>
+</project>

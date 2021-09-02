@@ -3,7 +3,7 @@ package controller
 import (
 	"ginx/cds"
 	"ginx/config"
-	"ginx/utility"
+	"ginx/utils"
 	"net/http"
 	"time"
 
@@ -27,7 +27,7 @@ func Issue(c *gin.Context) {
 
 	signed, err := token.SignedString([]byte(config.App.Secret))
 	if err != nil {
-		utility.Logger().Error("generate signed string error, " + err.Error())
+		utils.Logger().Error("generate signed string error, " + err.Error())
 		c.String(http.StatusInternalServerError, "generate sined string error")
 		c.Abort()
 		return

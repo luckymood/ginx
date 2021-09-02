@@ -2,7 +2,7 @@ package setup
 
 import (
 	"ginx/config"
-	"ginx/utility"
+	"ginx/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -10,15 +10,21 @@ import (
 var engine *gin.Engine
 
 func init() {
+	logger := utils.Logger()
+
 	gin.SetMode(config.Framework.Mode)
+
 	setEngine()
+	logger.Info("gin engine is ready.")
+
+	utils.SetGlobalTracer()
+	logger.Info("global tracer is ready.")
 }
 
 // setEngine run new engine
 func setEngine() {
 	engine = gin.New()
 	initRouters()
-	utility.Logger().Info("successfully set engine...")
 }
 
 // Engine get engine
